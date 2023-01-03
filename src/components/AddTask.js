@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import { useContext } from 'react';
+import DataContext from '../context/DataContext';
 
-const AddTask = ({ onAdd }) => {
+const AddTask = () => {
+  const { addTask } = useContext(DataContext);
+
   const [text, SetText] = useState('');
   const [day, SetDay] = useState('');
   const [reminder, SetReminder] = useState(false);
@@ -13,7 +17,7 @@ const AddTask = ({ onAdd }) => {
       return;
     }
 
-    onAdd({ text, day, reminder });
+    addTask({ text, day, reminder });
 
     // Clear Form fields
     SetText('');
