@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useContext } from 'react';
 import DataContext from '../context/DataContext';
 
-const Header = ({ title, onAdd, showAdd }) => {
+const Header = ({ title }) => {
   const location = useLocation();
   const { showAddTask, toggleShowAddTask } = useContext(DataContext);
 

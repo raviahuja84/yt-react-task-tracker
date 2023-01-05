@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Button = ({ color, text, onClick }) => {
   return (
     <button
@@ -9,7 +7,7 @@ const Button = ({ color, text, onClick }) => {
     >
       {text}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

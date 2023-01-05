@@ -7,10 +7,28 @@
       "id": 2
     },
     {
-      "text": "T1",
-      "day": "T1",
+      "text": "Task T3",
+      "day": "Task T3",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "Task 4",
+      "day": "Task 4",
       "reminder": true,
-      "id": 3
+      "id": 5
+    },
+    {
+      "text": "Test 1",
+      "day": "Test 1",
+      "reminder": false,
+      "id": 7
+    },
+    {
+      "text": "Test 6",
+      "day": "Test 6",
+      "reminder": true,
+      "id": 8
     }
   ]
 }

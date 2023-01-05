@@ -3,11 +3,25 @@ import { useContext } from 'react';
 import DataContext from '../context/DataContext';
 
 const AddTask = () => {
-  const { addTask } = useContext(DataContext);
+  const { tasks, setTasks } = useContext(DataContext);
 
   const [text, SetText] = useState('');
   const [day, SetDay] = useState('');
   const [reminder, SetReminder] = useState(false);
+
+  // Add New Task
+  const addTask = async (task) => {
+    const res = await fetch('http://localhost:5000/tasks', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(task),
+    });
+
+    const newTask = await res.json();
+    setTasks([...tasks, newTask]);
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
