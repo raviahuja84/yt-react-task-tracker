@@ -23,12 +23,6 @@
       "day": "Test 1",
       "reminder": false,
       "id": 7
-    },
-    {
-      "text": "Test 6",
-      "day": "Test 6",
-      "reminder": true,
-      "id": 8
     }
   ]
 }
